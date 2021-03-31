@@ -29,7 +29,9 @@ pipeline{
     stage('Docker Build')
     {
       steps{
-      sh "docker build -t jatin ."
+      
+	      sh "service docker start"
+	      sh "docker build -t jatin ."
       }
     }
   
