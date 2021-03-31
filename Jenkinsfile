@@ -19,10 +19,17 @@ pipeline{
   }
     }
   
+	    	stage ('Creat War File') {
+		steps {
+		sh 'jar -cf target/dependency/webapp-runner.jar target/*.war'
+		}
+		}
+    
+    
     stage('Docker Build')
     {
       steps{
-      sh "docker build -t jatin samplefile:latest"
+      sh "docker build -t jatin webapp-runner:latest"
       }
     }
   
