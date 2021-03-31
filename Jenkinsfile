@@ -21,7 +21,7 @@ pipeline{
   
 	    	stage ('Creat War File') {
 		steps {
-		sh 'jar -cf target/dependency/jatin.jar target/*.war'
+		sh 'jar -cf target/dependency/jatin.jar target/jatin99.war'
 		}
 		}
     
