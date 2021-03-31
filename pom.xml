@@ -16,7 +16,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>java-tomcat-maven-example</finalName>
+    <finalName>jatin99</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -32,7 +32,7 @@
                   <groupId>com.github.jsimone</groupId>
                   <artifactId>webapp-runner</artifactId>
                   <version>8.5.11.3</version>
-                  <destFileName>webapp-runner.jar</destFileName>
+                  <destFileName>jatin.jar</destFileName>
                 </artifactItem>
               </artifactItems>
             </configuration>
